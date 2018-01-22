@@ -9,8 +9,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethersocial/ethersocial-pool/storage"
-	"github.com/ethersocial/ethersocial-pool/util"
+	"github.com/ethersocial/esc-pool/storage"
+	"github.com/ethersocial/esc-pool/util"
 )
 
 type Config struct {

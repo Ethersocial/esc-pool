@@ -7,9 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/redis.v3"
-
-	"github.com/ethersocial/ethersocial-pool/util"
+	"github.com/ethersocial/esc-pool/util"
 )
 
 type Config struct {

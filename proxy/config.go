@@ -1,10 +1,10 @@
 package proxy
 
 import (
-	"github.com/ethersocial/ethersocial-pool/api"
-	"github.com/ethersocial/ethersocial-pool/payouts"
-	"github.com/ethersocial/ethersocial-pool/policy"
-	"github.com/ethersocial/ethersocial-pool/storage"
+	"github.com/ethersocial/esc-pool/api"
+	"github.com/ethersocial/esc-pool/payouts"
+	"github.com/ethersocial/esc-pool/policy"
+	"github.com/ethersocial/esc-pool/storage"
 )
 
 type Config struct {
