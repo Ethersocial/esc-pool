@@ -11,10 +11,10 @@ fi
 workspace="$PWD/build/_workspace"
 root="$PWD"
 ethdir="$workspace/src/github.com/ethersocial"
-if [ ! -L "$ethdir/ethersocial-pool" ]; then
+if [ ! -L "$ethdir/esc-pool" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
-    ln -s ../../../../../. ethersocial-pool
+    ln -s ../../../../../. esc-pool
     cd "$root"
 fi
 
@@ -25,8 +25,8 @@ GOBIN="$PWD/build/bin"
 export GOPATH GOBIN
 
 # Run the command inside the workspace.
-cd "$ethdir/ethersocial-pool"
-PWD="$ethdir/ethersocial-pool"
+cd "$ethdir/esc-pool"
+PWD="$ethdir/esc-pool"
 
 # Launch the arguments with the configured environment.
 exec "$@"

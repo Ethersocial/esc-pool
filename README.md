@@ -1,4 +1,4 @@
-## Open Source Ethereum Mining Pool
+## Open Source ESC Mining Pool
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
 
@@ -120,12 +120,12 @@ nginx 설정은 다른 구글문서를 참고해주세요.
 
     $ git config --global http.https://gopkg.in.followRedirects true
     $ git clone https://github.com/ethersocial/esc-pool
-    $ cd ethersocial-pool
+    $ cd esc-pool
     $ chmod 755 build/*
     $ make all
 
-다음을 했을 때 ethersocial-pool 이 나오면 설치 성공입니다.
-    $ ls ~/ethersocial-pool/build/bin/
+다음을 했을 때 esc-pool 이 나오면 설치 성공입니다.
+    $ ls ~/esc-pool/build/bin/
 
 ### ethersocial pool 설정
     $ cp config.example.json config.json
@@ -333,8 +333,8 @@ I recommend this deployment strategy:
 마찬가지로 screen을 실행한 후 풀을 실행해야 합니다. 그렇지 않으면 터미널이 닫히면서 풀 동작이 멈춥니다.
 
     $ screen -S pool1
-    $ cd ~/ethersocial-pool
-    $ ./build/bin/ethersocial-pool config.json
+    $ cd ~/esc-pool
+    $ ./build/bin/esc-pool config.json
     Crtl + a, d
 
 해당 스크린으로 돌아가려면 다음과 같이 입력합니다.
@@ -355,7 +355,7 @@ I recommend this deployment strategy:
 
 ### 설정파일 수정
 
-    $ vi ~/ethersocial-pool/www/config/environment.js
+    $ vi ~/esc-pool/www/config/environment.js
 
 다음 부분을 적절히 변경합니다.
 
@@ -371,7 +371,7 @@ Install nodejs. I suggest using LTS version >= 4.x from https://github.com/nodes
 
 The frontend is a single-page Ember.js application that polls the pool API to render miner stats.
 
-    $ cd ~/ethersocial-pool/www
+    $ cd ~/esc-pool/www
     $ sudo npm install -g ember-cli@2.9.1
     $ sudo npm install -g bower
     $ npm install
@@ -379,7 +379,7 @@ The frontend is a single-page Ember.js application that polls the pool API to re
     $ chmod 755 build.sh
     $ ./build.sh
     $ mkdir ~/www
-    $ mv ~/ethersocial-pool/www/dist/* ~/www/
+    $ mv ~/esc-pool/www/dist/* ~/www/
 
 위 처럼 풀의 홈페이지 부분 프론트엔드를 만들었습니다. 그리고 그 파일을 서비스할 디렉토리 www로 이동합니다.
 
