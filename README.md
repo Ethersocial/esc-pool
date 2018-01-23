@@ -97,15 +97,15 @@ nginx 설정은 다른 구글문서를 참고해주세요.
 
     $ sudo apt-get install -y build-essential
 
-### go-ethersocial 설치
+### go-esc 설치
     $ cd ~
-    $ git clone https://github.com/ethersocial/go-ethersocial
-    $ cdgo-ethersocial
+    $ git clone https://github.com/ethersocial/go-esc
+    $ cd go-esc
     $ chmod 755 build/*
     $ make gesc
-    $ cp ~/go-ethersocial/build/bin/gesc /usr/local/bin/
+    $ cp ~/go-esc/build/bin/gesc /usr/local/bin/
 
-### go-ethersocial 실행
+### go-esc 실행
 우분투에서는 screen 명령어를 이용해서 활용을 하는 것이 터미널을 관리할 때 편리합니다. 구글에서 ubuntu screen 을 검색해서 사용법을 익혀주세요.
 
     $ screen -S esc1
@@ -116,7 +116,7 @@ nginx 설정은 다른 구글문서를 참고해주세요.
 
     $ screen -r esc1
 
-### ethersocial pool 설치
+### esc pool 설치
 
     $ git config --global http.https://gopkg.in.followRedirects true
     $ git clone https://github.com/ethersocial/esc-pool
@@ -127,7 +127,7 @@ nginx 설정은 다른 구글문서를 참고해주세요.
 다음을 했을 때 esc-pool 이 나오면 설치 성공입니다.
     $ ls ~/esc-pool/build/bin/
 
-### ethersocial pool 설정
+### esc pool 설정
     $ cp config.example.json config.json
     $ vi config.json
 
